@@ -23,6 +23,9 @@ export LD_LIBRARY_PATH=/usr/local/lib:/opt/local/lib
 export C_INCLUDE_PATH=/usr/local/include:/opt/local/include
 export LIBRARY_PATH=/opt/local/lib
 
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
 # }}}
 
 # {{{ Manual pages
