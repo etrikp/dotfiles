@@ -1,0 +1,5 @@
+*.cache
+*.pyc
+User/Session.sublime_session
+Backup/*
+

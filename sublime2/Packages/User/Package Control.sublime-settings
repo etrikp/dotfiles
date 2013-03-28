@@ -1,0 +1,23 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Backbone.js",
+		"Chef",
+		"CoffeeScript",
+		"Git",
+		"HtmlTidy",
+		"LiveReload",
+		"Package Control",
+		"Rails Partial",
+		"Rake",
+		"SCSS",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"Slate",
+		"Stylus",
+		"SVN",
+		"TrailingSpaces",
+		"Twitter Bootstrap Snippets"
+	]
+}
