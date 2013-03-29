@@ -1,0 +1,29 @@
+[user]
+	name = Etrik Patricella
+	email = etrikp@aweber.com
+[diff]
+[color]
+    ui = auto
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    di = diff
+    dc = diff --cached
+    amend = commit --amend
+    aa = add --all
+    head = log -1
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+    # Show files ignored by git:
+    ign = ls-files -o -i --exclude-standard
+    tidy = !git remote prune origin && git branch -r --merged master | egrep -v '(master|staging)$' | sed 's%origin/%%' | xargs -I% git push origin :% && git branch --merged master | egrep -v '(master|staging)$' | xargs git branch -d
+    branch-root = !zsh -c 'diff -u <(git rev-list --first-parent `git rev-parse --abbrev-ref HEAD`) <(git rev-list --first-parent master) | sed -ne \"s/^ //p\" | head -1'
+[merge]
+    tool = opendiff
+[branch]
+	autosetupmerge = true
+[push]
+	default = matching
