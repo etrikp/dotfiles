@@ -1,6 +1,6 @@
 [user]
 	name = Etrik Patricella
-	email = etrikp@aweber.com
+	email = epatrice@cisco.com
 [diff]
 [color]
     ui = auto
@@ -27,3 +27,5 @@
 	autosetupmerge = true
 [push]
 	default = matching
+[gitreview]
+	username = epatrice
