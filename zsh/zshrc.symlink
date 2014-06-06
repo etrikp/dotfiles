@@ -16,7 +16,7 @@ export READNULLCMD="${PAGER}"
 export EDITOR="vim"
 export BROWSER="safari"
 export RSYNC_PROXY="localhost:8118"
-export PATH="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+export PATH="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin:${HOME}/.localnode/node_modules/bin:${HOME}/.localnode/node_modules/.bin:/opt/local/bin:/opt/local/sbin:${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
 export MANPATH="/opt/local/share/man:${MANPATH}"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LD_LIBRARY_PATH=/usr/local/lib:/opt/local/lib
@@ -400,3 +400,6 @@ setprompt
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
