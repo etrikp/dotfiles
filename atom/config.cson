@@ -1,0 +1,24 @@
+'exception-reporting':
+  'userId': '4bfc8ca8-90db-4735-9ca5-b15f042665e2'
+'release-notes':
+  'viewedVersion': '0.92.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '880edbf15f8ea8e6f410fb7c606164c4df3b0595'
+'editor':
+  'fontSize': 16
+  'invisibles': {}
+  'showInvisibles': true
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'monokai'
+  ]
+'tree-view': {}
+'whitespace':
+  'ignoreWhitespaceOnCurrentLine': false
+'tabs': {}
+'zentabs': {}
+'atom-beautify':
+  '_analyticsUserId': '9cd3fe0c-5e8f-4de4-a654-ea9a28fd7126'

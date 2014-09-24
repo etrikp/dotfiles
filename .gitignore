@@ -2,6 +2,7 @@ sublime2/User/Package\ Control.sublime-settings
 sublime2/User/Package Control.last-run
 # Byte-compiled / optimized / DLL files
 __pycache__/
+compile-cache
 *.py[cod]
 
 # C extensions
