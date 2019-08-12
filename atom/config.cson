@@ -1,24 +1,84 @@
-'exception-reporting':
-  'userId': '4bfc8ca8-90db-4735-9ca5-b15f042665e2'
-'release-notes':
-  'viewedVersion': '0.92.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '880edbf15f8ea8e6f410fb7c606164c4df3b0595'
-'editor':
-  'fontSize': 16
-  'invisibles': {}
-  'showInvisibles': true
-'core':
-  'themes': [
-    'atom-dark-ui'
-    'monokai'
-  ]
-'tree-view': {}
-'whitespace':
-  'ignoreWhitespaceOnCurrentLine': false
-'tabs': {}
-'zentabs': {}
-'atom-beautify':
-  '_analyticsUserId': '9cd3fe0c-5e8f-4de4-a654-ea9a28fd7126'
+"*":
+  "ansible-vault":
+    vault_password_file_flag: true
+    vault_password_file_path: "/Users/etrikp/sbg/build-platform/.vault_pass"
+  "atom-beautify":
+    _analyticsUserId: "9cd3fe0c-5e8f-4de4-a654-ea9a28fd7126"
+    analytics: false
+    general:
+      _analyticsUserId: "4ef2a978-467c-472f-b114-b845ed18508f"
+  "autocomplete-jedi":
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+  "autocomplete-python":
+    useKite: false
+  core:
+    audioBeep: false
+    automaticallyUpdate: false
+    customFileTypes:
+      "source.ansible": [
+        "yaml"
+        "yml"
+      ]
+    disabledPackages: [
+      "inline-autocomplete"
+      "linter-ansible-linting"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
+    titleBar: "custom"
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "4bfc8ca8-90db-4735-9ca5-b15f042665e2"
+  "file-types":
+    ".*.yaml$": "source.ansible"
+    ".*.yml$": "source.ansible"
+    ".*/group_vars/.*": "source.ansible"
+    ".*/host_vars/.*": "source.ansible"
+  "hiera-eyaml": {}
+  "inline-autocomplete": {}
+  "linter-ansible-linting":
+    useProjectConfig: true
+  "linter-ui-default":
+    panelHeight: 300
+  "markdown-preview":
+    useGitHubStyle: true
+  metrics:
+    userId: "880edbf15f8ea8e6f410fb7c606164c4df3b0595"
+  "release-notes":
+    viewedVersion: "0.92.0"
+  "status-bar": {}
+  tabs:
+    showIcons: true
+    usePreviewTabs: true
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".django.python.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: false
+    tabLength: 4
+".source.yaml":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false
