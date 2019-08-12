@@ -16,12 +16,16 @@ export READNULLCMD="${PAGER}"
 export EDITOR="vim"
 export BROWSER="safari"
 export RSYNC_PROXY="localhost:8118"
-export PATH="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin:${HOME}/.localnode/node_modules/bin:${HOME}/.localnode/node_modules/.bin:/opt/local/bin:/opt/local/sbin:${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+export PATH="/Users/etrikp/Library/Python/2.7/bin:${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
 export MANPATH="/opt/local/share/man:${MANPATH}"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LD_LIBRARY_PATH=/usr/local/lib:/opt/local/lib
 export C_INCLUDE_PATH=/usr/local/include:/opt/local/include
 export LIBRARY_PATH=/opt/local/lib
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
@@ -82,7 +86,7 @@ alias pjson='python -mjson.tool'
 alias yi='~/.cabal/bin/yi'
 alias gyi='yi -f pango'
 alias -g vimfiles="/usr/share/vim/vimfiles/"
-alias scp='scp -c arcfour'
+# alias scp='scp -c arcfour'
 
 # }}}
 
@@ -99,7 +103,15 @@ compctl -k "(add delete draft edit list import preview publish update)" nb
 export WORKON_HOME=$HOME/virtualenvs
 export VIRTUALENVWRAPPER_LOG_DIR=$WORKON_HOME
 export VIRTUALENVWRAPPER_HOOK_DIR=$WORKON_HOME
-# source /usr/local/bin/virtualenvwrapper.sh
+
+if [[ -e /opt/local/Library/Frameworks/Python.framework/Versions/Current/bin/virtualenvwrapper.sh ]]; then
+    source /opt/local/Library/Frameworks/Python.framework/Versions/Current/bin/virtualenvwrapper.sh
+elif [[ -e  /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+elif [[ -e /usr/bin/virtualenvwrapper.sh ]]; then
+    source /usr/bin/virtualenvwrapper.sh
+fi
+
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # }}}
 # }}}
@@ -110,7 +122,7 @@ setopt nohup
 setopt autocd
 setopt cdablevars
 setopt nobgnice
-setopt noclobber
+setopt clobber
 setopt shwordsplit
 setopt interactivecomments
 setopt autopushd pushdminus pushdsilent pushdtohome
@@ -398,8 +410,3 @@ setprompt
 # }}}
 # }}}
 
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
