@@ -16,7 +16,7 @@ export READNULLCMD="${PAGER}"
 export EDITOR="vim"
 export BROWSER="safari"
 export RSYNC_PROXY="localhost:8118"
-export PATH="/Users/etrikp/Library/Python/2.7/bin:${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+export PATH="/usr/local/opt/python@3.8/bin:/usr/local/opt/python/libexec/bin:${HOME}/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
 export MANPATH="/opt/local/share/man:${MANPATH}"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LD_LIBRARY_PATH=/usr/local/lib:/opt/local/lib
@@ -409,4 +409,3 @@ $PR_GREEN$PR_SHIFT_IN$PR_LLCORNER$PR_GREEN$PR_HBAR$PR_SHIFT_OUT(\
 setprompt
 # }}}
 # }}}
-
